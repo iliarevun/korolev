@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Супутник-1 — Сергій Корольов</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #0b0c1f;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: rgba(20, 20, 40, 0.9);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffbb00;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            text-align: center;
+            background: url('../images/колаж.png') no-repeat center 5%/cover ;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+       
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        main {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffbb00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .sat-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .tech-specs {
+            background: rgba(20, 20, 40, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .tech-specs h4 {
+            color: #ffbb00;
+            margin-bottom: 10px;
+        }
+
+        .tech-specs ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .tech-specs ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #101021;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        @media(max-width:768px) {
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="../images/logo.png" alt="Logo" style="width: 50px;">
+        <h1>Сергій Корольов</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="biography.html">Біографія</a>
+            <a href="achievements.html">Досягнення</a>
+            <a href="r7.html">Ракета Р-7</a>
+            <a href="sputnik.html">Супутник-1</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Супутник-1</h2>
+            <p>Перший штучний супутник Землі, запущений у 1957 році під керівництвом Сергія Корольова. Символ початку
+                космічної ери.</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="satellite1">
+            <h3>Історія запуску</h3>
+            <p>Супутник-1 був запущений 4 жовтня 1957 року ракетою Р-7. Він став першим штучним супутником Землі, що
+                обертався навколо планети, і ознаменував початок космічної ери. Запуск супутника викликав великий
+                резонанс у світі і започаткував космічні програми багатьох країн.</p>
+            <img src="../images/sputnik-1.jpg" alt="Супутник-1"
+                class="sat-image">
+            <img src="../images/suputnyk-2.jpg" alt="Супутник" class="sat-image">
+
+            <h3>Технічні характеристики</h3>
+            <div class="tech-specs">
+                <h4>Основні дані:</h4>
+                <ul>
+                    <li>Маса: 83,6 кг</li>
+                    <li>Діаметр: 58 см</li>
+                    <li>Довжина антен: 2 м</li>
+                    <li>Обертання: 1440 разів на добу</li>
+                    <li>Живлення: батареї, працював 21 день</li>
+                    <li>Сигнал: радіосигнали на частотах 20,005 та 40,002 МГц</li>
+                </ul>
+            </div>
+
+            <h3>Значення для космонавтики</h3>
+            <p>Супутник-1 довів можливість запуску штучних об’єктів на орбіту Землі, перевірив технології телеметрії та
+                управління, підготував шлях для запуску наступних супутників і космічних кораблів. Ця подія стала
+                відправною точкою розвитку космічних програм СРСР та світу.</p>
+                <img src="../images/Untitled(1).jpg" alt="Супутник-1" class="sat-image">
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Сергій Корольов. Усі права захищені.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сергій Корольов — Досягнення</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #0b0c1f;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: rgba(20, 20, 40, 0.9);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffbb00;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            text-align: center;
+            background: url('../images/Untitled(1).png') no-repeat center 5%/cover ;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        main {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffbb00;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .achievement {
+            background: rgba(20, 20, 40, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .achievement:hover {
+            transform: scale(1.02);
+        }
+
+        .achievement h4 {
+            color: #ffbb00;
+            margin-bottom: 10px;
+        }
+
+        .achievement p {
+            margin: 0;
+        }
+
+        .earth-image{
+            width: auto;
+            height: 300px;
+            display: inline-block;
+            margin: 20px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background: #101021;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        @media(max-width:768px) {
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="../images/logo.png" alt="Logo" style="width: 50px;">
+        <h1>Сергій Корольов</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="biography.html">Біографія</a>
+            <a href="achievements.html">Досягнення</a>
+            <a href="r7.html">Ракета Р-7</a>
+            <a href="sputnik.html">Супутник-1</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Досягнення</h2>
+            <p>Ключові досягнення Сергія Корольова у ракетобудуванні та космонавтиці, які змінили світ.</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="achievements">
+            <div class="achievement">
+                <h4>Перший штучний супутник Землі (1957)</h4>
+                <p>Корольов очолював запуск супутника "Супутник-1", який відкрив еру космічних досліджень і став
+                    символом технологічного прориву.</p>
+                <img src="../images/zemlya1.png" alt="Земля" class="earth-image">
+            </div>
+
+            <div class="achievement">
+                <h4>Перший політ людини в космос (1961)</h4>
+                <p>Під його керівництвом Юрій Гагарін здійснив історичний політ на космічному кораблі "Восток-1".</p>
+            </div>
+
+            <div class="achievement">
+                <h4>Розробка ракети Р-7</h4>
+                <p>Перша міжконтинентальна балістична ракета, яка стала основою для запуску супутників та космічних
+                    кораблів.</p>
+            </div>
+
+            <div class="achievement">
+                <h4>Створення серії космічних кораблів “Восток” та “Союз”</h4>
+                <p>Внесок Корольова у проєкти, які дозволили стабільно здійснювати польоти людей у космос та доставку
+                    вантажів.</p>
+            </div>
+
+            <div class="achievement">
+                <h4>Підготовка кадрів для космонавтики</h4>
+                <p>Виховав нове покоління інженерів і конструкторів, заклав фундамент для розвитку радянської та
+                    світової космонавтики.</p>
+            </div>
+
+            <div class="achievement">
+                <h4>Наукові досягнення у ракетобудуванні</h4>
+                <p>Розробив технології ракетних двигунів, систем керування та аеродинаміки, що стали основою для
+                    подальшого розвитку космічних програм.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Сергій Корольов. Усі права захищені.
+    </footer>
+
+</body>
+
+</html>
